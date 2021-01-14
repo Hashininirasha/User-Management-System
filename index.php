@@ -1,3 +1,5 @@
+<?php require_once('inc/conn.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
