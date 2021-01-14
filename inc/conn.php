@@ -1,4 +1,4 @@
-<? php
+<?php
 
 	$host='localhost';
 	$user='root';
@@ -10,9 +10,8 @@
 	if(mysqli_connect_errno()){
 		die('Database connection failed'.mysqli_connect_errno());
 	}else{
-		echo "can't Access";
+		echo "Go ahead";
 	}
-
 
 
 
