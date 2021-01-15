@@ -36,11 +36,11 @@
 
 	<form action="index.php" method="post">
 	<div class="container text-center">
-	<div class="input-group mb-3">
+	<div class="input-group mb-5">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | Name With Initial</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" placeholder="Enter Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div>
   
 
