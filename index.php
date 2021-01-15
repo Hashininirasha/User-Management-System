@@ -41,14 +41,14 @@
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | Name With Initial</span>
   </div>
   <input type="text" class="form-control" placeholder="Enter your Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-</div>
+</div></div>
   	<div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i> | E-mail Address</span>
   </div>
   <input type="text" class="form-control" placeholder="Enter your E-mail Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-</div>
+</div></div>
 <div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
