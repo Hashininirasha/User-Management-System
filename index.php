@@ -1,5 +1,18 @@
 <?php require_once('inc/conn.php'); ?>
 
+<?php  
+  //check form submission
+  if (isset($_POST['login'])){
+    
+    //check user name and password
+
+  //save username and pw into variables
+
+  //prepare db query
+
+}
+       ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +70,7 @@
 </div>
 
    
-  <button type="submit" class="btn btn-primary">Log In</button>
+  <button type="submit" name="login" class="btn btn-primary">Log In</button>
   </div>
   
   </fieldset>
