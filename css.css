@@ -1,1 +1,7 @@
-css
+.login {
+	width: 350px;
+	margin: 100px auto;
+}
+input {
+	display: block;
+}
