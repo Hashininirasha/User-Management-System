@@ -37,6 +37,10 @@
 
 	<form action="index.php" method="post">
       <div class="login">
+
+      <fieldset>
+        <legend><h2>Log In</h2></legend>
+        <p class="error">Invaild User Name/Password </p>
   	<div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
@@ -55,9 +59,10 @@
    
   <button type="submit" class="btn btn-primary">Log In</button>
   </div>
-  </div>
+  
+  </fieldset>
 </form>
-
+</div>
 </body>
 </html>
 

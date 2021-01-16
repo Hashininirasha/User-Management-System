@@ -5,3 +5,8 @@
 input {
 	display: block;
 }
+p.error {
+	background:red;
+	color: white;
+	padding: 10px; 
+}
