@@ -5,6 +5,9 @@
   if (isset($_POST['login'])){
     
     //check user name and password
+    if (!isset($_POST['email'])||strlen(trim($_POST['email']))<1){
+      
+    }
 
   //save username and pw into variables
 
@@ -59,7 +62,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | User Name</span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter your User Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" placeholder="Enter your User Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
 <div class="container text-center">
 	<div class="input-group mb-5">
