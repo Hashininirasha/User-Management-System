@@ -24,6 +24,11 @@
   
 
   //prepare db query
+    $query="select * from user
+            where Email='{$email}
+            and
+            password='{$password}'
+            limit 1";
 
 }
        ?>
