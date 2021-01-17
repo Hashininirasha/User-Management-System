@@ -15,7 +15,12 @@
       $errors[]='Password is missing/invalid';
       
     }
-  //save username and pw into variables
+    //save username and pw into variables
+    if (empty($errors)){
+      $email=mysqli_real_escape_string($con,$_POST['email']);
+      $password=mysqli_real_escape_string($con,$_POST['pw']);
+    }
+  
 
   //prepare db query
 
