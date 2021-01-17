@@ -19,6 +19,7 @@
     if (empty($errors)){
       $email=mysqli_real_escape_string($con,$_POST['email']);
       $password=mysqli_real_escape_string($con,$_POST['pw']);
+      $hashed_password=sha1($password);
     }
   
 
