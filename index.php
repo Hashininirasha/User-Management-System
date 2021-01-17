@@ -11,7 +11,10 @@
       $errors[]='User Name is missing/invalid';
       
     }
-
+    if (!isset($_POST['pw'])||strlen(trim($_POST['pw']))<1){
+      $errors[]='Password is missing/invalid';
+      
+    }
   //save username and pw into variables
 
   //prepare db query
@@ -72,7 +75,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-key" aria-hidden="true"></i> | Password</span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter your Password" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="pw" placeholder="Enter your Password" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div>
 
    
