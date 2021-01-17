@@ -3,9 +3,12 @@
 <?php  
   //check form submission
   if (isset($_POST['login'])){
+
+    $errors=array();
     
     //check user name and password
     if (!isset($_POST['email'])||strlen(trim($_POST['email']))<1){
+      $errors[]='User Name is missing/invalid';
       
     }
 
