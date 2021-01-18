@@ -24,11 +24,25 @@
   
 
   //prepare db query
-    $query="select * from user
-            where Email='{$email}
-            and
-            password='{$password}'
-            limit 1";
+    $query="SELECT * FROM user
+            WHERE Email='{$email}'
+            AND password='{$password}'
+            LIMIT 1";
+
+    $result_set=mysqli_query($con,$query);
+    
+    if ($result_set){
+      //query successfull
+      if (mysqli_num_rows($result_set)==1){
+        //valid user found
+
+      }else{
+        //user name and password invalid
+        $error[]='Invalid User Name/Password';
+      }
+    }else{
+      $error[]="Database query falied";
+    }
 
 }
        ?>
@@ -73,7 +87,7 @@
 
       <fieldset>
         <legend><h2>Log In</h2></legend>
-        <p class="error">Invaild User Name/Password </p>
+        
   	<div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
@@ -90,7 +104,7 @@
 </div>
 
    
-  <button type="submit" name="login" class="btn btn-primary">Log In</button>
+  <button type="submit" name="login" class="btn btn-danger">Log In</button>
   </div>
   
   </fieldset>
