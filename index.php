@@ -25,8 +25,8 @@
 
   //prepare db query
     $query="SELECT * FROM user
-            WHERE Email='{email}'
-            AND password='{password}'
+            WHERE Email='{$email}'
+            AND password='{$hashed_password}'
             LIMIT 1";
 
     $result_set=mysqli_query($con,$query);
@@ -38,10 +38,10 @@
           header('Location: users.php');
       }else{
         //user name and password invalid
-        $error[]='Invalid User Name/Password';
+        $errors[]='Invalid User Name/Password';
       }
     }else{
-      $error[]="Database query falied";
+      $errors[]="Database query falied";
     }
 
 }
