@@ -87,6 +87,11 @@
 
       <fieldset>
         <legend><h2>Log In</h2></legend>
+        <?php 
+          if(isset($errors) && !empty($errors)){
+            echo '<p class="error">Invalid Username/password </p>';
+          }
+        ?>
         
   	<div class="container text-center">
 	<div class="input-group mb-5">
