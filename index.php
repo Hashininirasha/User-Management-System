@@ -25,8 +25,8 @@
 
   //prepare db query
     $query="SELECT * FROM user
-            WHERE Email='{$email}'
-            AND password='{$password}'
+            WHERE Email='{email}'
+            AND password='{password}'
             LIMIT 1";
 
     $result_set=mysqli_query($con,$query);
@@ -35,7 +35,7 @@
       //query successfull
       if (mysqli_num_rows($result_set)==1){
         //valid user found
-
+          header('Location: users.php');
       }else{
         //user name and password invalid
         $error[]='Invalid User Name/Password';
