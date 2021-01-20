@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php require_once('inc/conn.php'); ?>
 
 <?php  
@@ -34,7 +36,13 @@
     if ($result_set){
       //query successfull
       if (mysqli_num_rows($result_set)==1){
+
         //valid user found
+        $user=mysqli_fetch_assoc($result_set);
+        $_SESSION['user.id']=$user['ID'];
+        $_SESSION['first_name']=$user['First_Name'];
+
+        //redirect to users.php
           header('Location: users.php');
       }else{
         //user name and password invalid

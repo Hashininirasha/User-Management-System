@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php require_once('inc/conn.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +28,7 @@
           <div class="p-3 mb-2 bg-danger text-white">
   <!-- Navbar content -->
 <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-  <a class="navbar-brand" >Welcome to User Management system 👧🧑</a>
+  <a class="navbar-brand" >Welcome to User Management system 👧🧑 <?php echo $_SESSION['first_name']; ?></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
