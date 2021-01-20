@@ -1,5 +1,16 @@
 <?php session_start(); ?>
 <?php require_once('inc/conn.php'); ?>
+<?php
+
+  //checking if user is logged in
+  if (!isset($_SESSION['user_id'])){
+    header('Location: index.php');
+  }
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
