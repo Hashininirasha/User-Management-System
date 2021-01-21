@@ -100,6 +100,13 @@
             echo '<p class="error">Invalid Username/password </p>';
           }
         ?>
+        <?php
+
+          if(isset($_GET['logout'])){
+            echo '<p class="info">You are successfully logged from system. </p>';
+          }
+
+        ?>
         
   	<div class="container text-center">
 	<div class="input-group mb-5">
