@@ -39,7 +39,7 @@
 
         //valid user found
         $user=mysqli_fetch_assoc($result_set);
-        $_SESSION['user.id']=$user['ID'];
+        $_SESSION['user_id']=$user['ID'];
         $_SESSION['first_name']=$user['First_Name'];
 
         //redirect to users.php
