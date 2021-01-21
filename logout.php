@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-//$_SESSION=array():
+$_SESSION=array():
 
 //erase cookey
 if(isset($_COOKIE[session_name()])){
@@ -14,7 +14,7 @@ if(isset($_COOKIE[session_name()])){
 
 	session_destory();
 
-	//header('Location: index.php');
+	header('Location: index.php');
 
 
 
