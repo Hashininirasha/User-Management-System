@@ -7,7 +7,11 @@
     header('Location: index.php');
   }
 
-
+  $user_list = " ";
+  //geting the list of users
+  $query = "SELECT * FROM user WHERE Is_Deleted=0 ORDER BY First_Name";
+  $user = mysqli_query($con, $query);
+  
 
 
 ?>
@@ -68,6 +72,7 @@
       <th scope="col">Delete</th>
     </tr>
   </thead>
+  <?php echo $user_list ?>
   <tbody>
     <tr>
       <th scope="row">1</th>
