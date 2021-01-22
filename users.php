@@ -32,8 +32,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+
+
 </head>
 <body>
+
 <div class="container text-center">
 
           <div class="p-3 mb-2 bg-danger text-white">
@@ -52,8 +55,12 @@
   </div>
 
 </nav>
+
  </div>
+ <h1>Users <span><a href="add-user.php"> Add New User </a></span></h1>
         </div>
+
+
 
 
 </body>
