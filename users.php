@@ -10,8 +10,13 @@
   $user_list = " ";
   //geting the list of users
   $query = "SELECT * FROM user WHERE Is_Deleted=0 ORDER BY First_Name";
-  $user = mysqli_query($con, $query);
-  
+  $users = mysqli_query($con, $query);
+
+  if ($users){
+    
+  }else {
+    echo "Database query failed."; 
+  }
 
 
 ?>
