@@ -76,7 +76,8 @@
 </nav>
 
  </div>
- <h1>Users <span><a href="add-user.php"> Add New User </a></span></h1>
+ <h1>Users </h1>
+ <button type="submit" name="login" class="btn btn-danger">Add New User </button> <br><br>
  <table class="table">
   <thead>
     <tr class="table table-sm table-dark">
