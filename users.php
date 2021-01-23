@@ -13,12 +13,13 @@
   $users = mysqli_query($con, $query);
 
   if ($users){
-    while ($users = mysqli_fetch_assoc($users)){
+    while ($user = mysqli_fetch_assoc($users)){
       $user_list.="<tr>";
       $user_list.="<td>{$user['First_Name']}</td>";
       $user_list.="<td>{$user['Last_Name']}</td>";
       $user_list.="<td>{$user['Last_login']}</td>";
-      $user_list.="<td><a href="modify-user.php?user_id={$user['ID']}\">Edit </a></td>";
+      $user_list.="<td><a href=\"modify-user.php?user_id={$user['ID']}\">Edit </a></td>";
+      $user_list.="<td><a href=\"delete-user.php?user_id={$user['ID']}\">Delete </a></td>";
       $user_list.="</tr>";
 
     }
