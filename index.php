@@ -42,7 +42,7 @@
         $_SESSION['user_id']=$user['ID'];
         $_SESSION['first_name']=$user['First_Name'];
         //updating last login
-        $query = "UPDATE users SET Last_login = NOW()";
+        $query = "UPDATE user SET Last_login = NOW()";
         $query .= "WHERE id = {$_SESSION['user_id']} LIMIT 1";
 
         $result_set = mysqli_query($con, $query);
