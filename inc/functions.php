@@ -4,7 +4,7 @@
 
 		global $con;
 		if(!$result_set){
-			die("Database query failed: " .mysqli_error());
+			die("Database query failed: " .mysqli_error($con));
 		}
 		
 	}
