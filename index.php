@@ -47,6 +47,10 @@
 
         $result_set = mysqli_query($con, $query);
 
+        if(!result_set){
+          die("Databse query failed.");
+        }
+
         //redirect to users.php
           header('Location: users.php');
       }else{
