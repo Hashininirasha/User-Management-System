@@ -2,6 +2,8 @@
 
 <?php require_once('inc/conn.php'); ?>
 
+<?php require_once('inc/functions.php'); ?>
+
 <?php  
   //check form submission
   if (isset($_POST['login'])){
