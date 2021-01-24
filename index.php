@@ -119,7 +119,7 @@
   	<div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | User Name</span>
+    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | User Your Email</span>
   </div>
   <input type="text" class="form-control" name="email" placeholder="Enter your User Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
@@ -128,7 +128,8 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-key" aria-hidden="true"></i> | Password</span>
   </div>
-  <input type="text" class="form-control" name="pw" placeholder="Enter your Password" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  
+  <input type="password" id="inputPassword5" name="pw" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter your Password" >
 </div>
 
    
