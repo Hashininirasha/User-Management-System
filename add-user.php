@@ -6,19 +6,16 @@
 
   $errors = array();
   if(isset($_POST['submit'])){
-    //cheaking required field
-    if(empty(trim($_POST['fn']))){
-      $errors[] = 'First Name is Required';
+//cheaking required field 
+    $req_field = array('fn','ln','email','pw');
+
+    foreach ($req_field as $field){
+      if(empty(trim($_POST[$field]))){
+      $errors[] = $field.'is Required';
     }
-    if(empty(trim($_POST['ln']))){
-      $errors[] = 'Last Name is Required';
     }
-    if(empty(trim($_POST['email']))){
-      $errors[] = 'Email is Required';
-    }
-    if(empty(trim($_POST['pw']))){
-      $errors[] = 'Password is Required';
-    }
+    
+    
     
     
     
