@@ -58,7 +58,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | First Name</span>
   </div>
-  <input type="text" class="form-control" name="email" placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" required placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
 </div></div>
 
 <div class="container text-center">
@@ -66,7 +66,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | Last Name</span>
   </div>
-  <input type="text" class="form-control" name="email" placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" required placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
 
 <div class="container text-center">
@@ -74,7 +74,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i>| Email Address</span>
   </div>
-  <input type="text" class="form-control" name="email" placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" required placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
 
 
@@ -85,7 +85,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-key" aria-hidden="true"></i> | New Password</span>
   </div>
-    <input type="password" id="inputPassword5" name="pw" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter New Password" >
+    <input type="password" id="inputPassword5" name="pw" required class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter New Password" >
 
 </div>
 
