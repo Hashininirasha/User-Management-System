@@ -2,6 +2,16 @@
 <?php require_once('inc/conn.php'); ?>
 <?php require_once('inc/functions.php'); ?>
 
+<?php 
+
+  $errors = array();
+  if(isset($_POST['submit'])){
+    //cheaking required field
+    
+    
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +100,7 @@
 </div>
 
    
-  <button type="submit" name="login" class="btn btn-danger">Save</button>
+  <button type="submit" name="submit" class="btn btn-danger">Save</button>
   </div>
   
   </fieldset>
