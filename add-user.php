@@ -78,13 +78,13 @@
 
         <?php
           if (!empty($errors)){
-            echo '<div class="errmsg>';
+            echo '<div class="errmsg">';
             echo 'There were error(s) on your form';
-            echo '</div>'
+            
             foreach ($errors as $error){
               echo $error;
             }
-            echo '</div>'
+            echo '</div>';
           }
             
 
