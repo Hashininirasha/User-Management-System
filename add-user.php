@@ -7,6 +7,19 @@
   $errors = array();
   if(isset($_POST['submit'])){
     //cheaking required field
+    if(empty(trim($_POST['fn']))){
+      $errors[] = 'First Name is Required';
+    }
+    if(empty(trim($_POST['ln']))){
+      $errors[] = 'Last Name is Required';
+    }
+    if(empty(trim($_POST['email']))){
+      $errors[] = 'Rmail is Required';
+    }
+    if(empty(trim($_POST['pw']))){
+      $errors[] = 'Password is Required';
+    }
+    
     
     
   }
@@ -62,13 +75,22 @@
  <button type="submit" name="login" class="btn btn-danger"><a href="users.php"> Back to user list</a> </button> <br><br>
  
         </div>
+
+        <?php
+          if (!empty($errors)){
+            echo 'There were error(s) on your form';
+          }
+            
+
+
+        ?>
         <form>
   	<div class="container text-center">
 	<div class="input-group mb-5">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | First Name</span>
   </div>
-  <input type="text" class="form-control" name="email" required placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+  <input type="text" class="form-control" name="fn"  placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
 </div></div>
 
 <div class="container text-center">
@@ -76,7 +98,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | Last Name</span>
   </div>
-  <input type="text" class="form-control" name="email" required placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="ln" placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
 
 <div class="container text-center">
@@ -84,7 +106,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i>| Email Address</span>
   </div>
-  <input type="text" class="form-control" name="email" required placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div></div>
 
 
@@ -95,7 +117,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-key" aria-hidden="true"></i> | New Password</span>
   </div>
-    <input type="password" id="inputPassword5" name="pw" required class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter New Password" >
+    <input type="password" id="inputPassword5" name="pw" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter New Password" >
 
 </div>
 
