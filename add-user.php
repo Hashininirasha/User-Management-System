@@ -14,7 +14,7 @@
       $errors[] = 'Last Name is Required';
     }
     if(empty(trim($_POST['email']))){
-      $errors[] = 'Rmail is Required';
+      $errors[] = 'Email is Required';
     }
     if(empty(trim($_POST['pw']))){
       $errors[] = 'Password is Required';
@@ -78,7 +78,13 @@
 
         <?php
           if (!empty($errors)){
+            echo '<div class="errmsg>';
             echo 'There were error(s) on your form';
+            echo '</div>'
+            foreach ($errors as $error){
+              echo $error;
+            }
+            echo '</div>'
           }
             
 
