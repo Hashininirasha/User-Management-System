@@ -5,18 +5,27 @@
 <?php 
 
   $errors = array();
+
   if(isset($_POST['submit'])){
 //cheaking required field 
-    $req_field = array('fn','ln','email','pw');
+    $req_fields = array('fn','ln','email','pw');
 
-    foreach ($req_field as $field){
+    foreach ($req_fields as $field){
       if(empty(trim($_POST[$field]))){
       $errors[] = $field.'is Required';
     }
     }
     
-    
-    
+    //checking max length
+
+
+    $max_len = array('fn' => 15,'ln' => 15,'email' => 50,'pw' => 10);
+
+    foreach ($max_len  as $field => $max_len){
+      if(strlen(trim($_POST[$field])) > $max_len ){
+      $errors[] = $field.'must be less than'.$max_len.'characters';
+    }
+    }
     
     
   }
