@@ -42,6 +42,16 @@
     if(is_email($_POST['email'])){
       $errors = 'Email address is invalid';
     }
+    //cheacking of email address already exits
+    $email = mysqli_real_escape_string($con, $_POST['email']);
+    $query = "SELECT * FROM user WHERE email = '{$email}' LIMIT 1";
+
+    $result = mysqli_query($con, $query);
+    if($result){
+      if(mysqli_num_rows($result) ==1){
+        $errors[] = 'Email address is already exists';
+      }
+    }
   }
 ?>
 
