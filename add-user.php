@@ -27,7 +27,10 @@
     }
     }
     
-    
+    //cheacking email address
+    if(is_email($_POST['email'])){
+      $errors = 'Email address is invalid';
+    }
   }
 ?>
 
