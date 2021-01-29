@@ -6,7 +6,18 @@
 
   $errors = array();
 
+  $fn='';
+  $ln='';
+  $email='';
+  $pw='';
+
   if(isset($_POST['submit'])){
+
+  $fn=$_POST['fn'];
+  $ln=$_POST['ln'];
+  $email=$_POST['email'];
+  $pw=$_POST['pw'];
+
 //cheaking required field 
     $req_fields = array('fn','ln','email','pw');
 
