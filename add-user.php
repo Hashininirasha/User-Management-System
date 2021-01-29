@@ -116,7 +116,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | First Name</span>
   </div>
-  <input type="text" class="form-control" name="fn"  placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+  <input type="text" class="form-control" name="fn"  placeholder="Enter your First Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" required <?php echo 'value="'.$fn.'"'; ?>>
 </div></div>
 
 <div class="container text-center">
@@ -124,7 +124,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i> | Last Name</span>
   </div>
-  <input type="text" class="form-control" name="ln" placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="ln" placeholder="Enter Last Name" aria-label="Default" aria-describedby="inputGroup-sizing-default" <?php echo 'value="'.$ln.'"'; ?>>
 </div></div>
 
 <div class="container text-center">
@@ -132,7 +132,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i>| Email Address</span>
   </div>
-  <input type="text" class="form-control" name="email" placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" name="email" placeholder="Enter Email Address" aria-label="Default" aria-describedby="inputGroup-sizing-default" <?php echo 'value="'.$email.'"'; ?>>
 </div></div>
 
 
