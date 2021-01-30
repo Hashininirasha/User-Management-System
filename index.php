@@ -56,11 +56,11 @@
           header('Location: users.php');
       }else{
         //user name and password invalid
-        $errors[]='Invalid User Name/Password';
+        $errors[] = 'Invalid User Name/Password';
       }
     
 }
-}
+
        ?>
 
 <!DOCTYPE html>

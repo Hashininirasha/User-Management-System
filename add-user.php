@@ -52,6 +52,23 @@
         $errors[] = 'Email address is already exists';
       }
     }
+    if(empty($errors)){
+      //no errors found..adding new reccord
+      $fn = mysqli_real_escape_string($con, $_POST['fn']);
+      $ln = mysqli_real_escape_string($con, $_POST['ln']);
+      $pw = mysqli_real_escape_string($con, $_POST['pw']);
+
+      $query = "INSERT INTO user (First_Name,Last_Name,Email,Is_Deleted,password) VALUES ('{$fn}','{$ln}','{$email}',0,'{$pw}')";
+
+      $result = mysqli_query($con, $query);
+      if($result){
+        //query successfull.....redirctiong to user page
+        header('Location:users.php?user_added=true');
+
+      }else{
+        $errors = "failed to add new record.";
+      }
+    }
   }
 ?>
 
